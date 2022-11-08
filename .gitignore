@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+pratica
+
+# Temporary files
+*.swp
