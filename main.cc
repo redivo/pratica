@@ -7,6 +7,7 @@ using namespace std;
 
 /**************************************************************************************************/
 
+/* Lista de participantes */
 vector<string> global_Participantes {
     "00 ",
     "01 ",
@@ -53,7 +54,7 @@ vector<string> global_Participantes {
 
 /**************************************************************************************************/
 
-/* lista de opções do menu */
+/* Lista de opções do menu */
 typedef enum {
     INVALIDA = -1,
     LISTA = 1,
@@ -62,6 +63,7 @@ typedef enum {
 
 /**************************************************************************************************/
 
+/* Função que implementa o menu */
 opcao_t menu()
 {
     int opcao;
@@ -89,6 +91,7 @@ opcao_t menu()
 
 /**************************************************************************************************/
 
+/* Função que exibe a lista de participantes */
 void lista_participantes()
 {
     // Mostra titulo
@@ -103,6 +106,7 @@ void lista_participantes()
 
 /**************************************************************************************************/
 
+/* Função que sorteia 1 participante e exibe o sorteado */
 void sorteia_participante()
 {
     // Inicializa gerador randomico
@@ -118,10 +122,9 @@ void sorteia_participante()
 
 /**************************************************************************************************/
 
+/* Função main */
 int main()
 {
-    //
-
     // Exibe menu e pega a opcao do usuario
     opcao_t opcao = menu();
 
