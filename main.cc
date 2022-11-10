@@ -7,19 +7,54 @@ using namespace std;
 
 /**************************************************************************************************/
 
+/* Lista de participantes */
 vector<string> global_Participantes {
-    "George",
-    "Jeferson",
-    "Sabrina",
-    "Priscila",
-    "Maria",
-    "Ariella",
-    "Carlos",
+    "00 ",
+    "01 ",
+    "02 ",
+    "03 ",
+    "04 ",
+    "05 ",
+    "06 ",
+    "07 ",
+    "08 ",
+    "09 ",
+    "10 ",
+    "11 ",
+    "12 ",
+    "13 ",
+    "14 ",
+    "15 ",
+    "16 ",
+    "17 ",
+    "18 ",
+    "19 ",
+    "20 ",
+    "21 ",
+    "22 ",
+    "23 ",
+    "24 ",
+    "25 ",
+    "26 ",
+    "27 ",
+    "28 ",
+    "29 ",
+    "30 ",
+    "31 ",
+    "32 ",
+    "33 ",
+    "34 ",
+    "35 ",
+    "36 ",
+    "37 ",
+    "38 ",
+    "39 ",
+    "40 ",
 };
 
 /**************************************************************************************************/
 
-/* lista de opções do menu */
+/* Lista de opções do menu */
 typedef enum {
     INVALIDA = -1,
     LISTA = 1,
@@ -28,6 +63,7 @@ typedef enum {
 
 /**************************************************************************************************/
 
+/* Função que implementa o menu */
 opcao_t menu()
 {
     int opcao;
@@ -55,6 +91,7 @@ opcao_t menu()
 
 /**************************************************************************************************/
 
+/* Função que exibe a lista de participantes */
 void lista_participantes()
 {
     // Mostra titulo
@@ -69,6 +106,7 @@ void lista_participantes()
 
 /**************************************************************************************************/
 
+/* Função que sorteia 1 participante e exibe o sorteado */
 void sorteia_participante()
 {
     // Inicializa gerador randomico
@@ -84,10 +122,9 @@ void sorteia_participante()
 
 /**************************************************************************************************/
 
+/* Função main */
 int main()
 {
-    //
-
     // Exibe menu e pega a opcao do usuario
     opcao_t opcao = menu();
 
